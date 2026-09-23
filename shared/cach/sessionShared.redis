@@ -1,0 +1,11 @@
+# sessionShared.redis
+# Documents the shared-session cache convention used by
+# backend/*/service/auth.service.js, so the same logged-in session is valid
+# no matter which of the 3 servers the load balancer routes a request to.
+#
+# Key pattern:   session:<jwt_token>
+# Value:         <user_id>
+# TTL:           7 days (matches the JWT expiry)
+#
+# Purpose (per diagram): "this cache for session share for auth because it
+# must share between 3 servers to avoid logout with every request".

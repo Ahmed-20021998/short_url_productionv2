@@ -1,0 +1,15 @@
+{
+  "name": "url-short-infra",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "worker": "node worker.js",
+    "load-balancer": "node loadBalancer.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "http-proxy": "^1.18.1",
+    "ioredis": "^5.4.1",
+    "pg": "^8.12.0"
+  }
+}

@@ -1,0 +1,17 @@
+# url.redis
+# This is NOT a real Redis file format — Redis has no native file extension.
+# It documents the cache convention used by backend/*/repository/url.repository.js
+# so the structure in your diagram is represented on disk.
+#
+# Key pattern:   url:short:<short_code>
+# Value:         <long_url>
+# TTL:           24h (refreshed on every read/write)
+#
+# Diagram shape:
+#   {
+#     long_url: short_url
+#   }
+#
+# In code we key by short_code (not long_url) because redirects look up
+# by short_code — this is the reverse-index of the dict shown in the diagram,
+# chosen because GET /:short_code is the hot path that must be O(1).

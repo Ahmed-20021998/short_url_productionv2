@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "short_code": "lgTD79E",
+    "long_url": "https://next-lang-graph-ve46-ten.vercel.app/",
+    "user_id": 1,
+    "created_at": "2026-09-23T17:47:47.554Z",
+    "clicks": 1
+  },
+  {
+    "id": 2,
+    "short_code": "mv2TgmA",
+    "long_url": "https://youtu.be/EaXHfuHRWwg?si=qAMp4tcnNn0Yc0AC",
+    "user_id": 1,
+    "created_at": "2026-09-23T17:51:53.135Z",
+    "clicks": 1
+  },
+  {
+    "id": 3,
+    "short_code": "qKQg8Z2",
+    "long_url": "https://www.youtube.com/@BashmohandesMazen/videos",
+    "user_id": 1,
+    "created_at": "2026-09-23T17:54:41.169Z",
+    "clicks": 1
+  }
+]
